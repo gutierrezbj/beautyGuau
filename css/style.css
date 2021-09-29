@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/CarmenBeautyGuau1.jpg)  no-repeat center;
+    object-fit: cover;
+}
+
+
+
+.card-wrapper {
+    height: 600px;
+    width: 450px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/CarmenBeautyGuau1.jpg) no-repeat center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 1s;
+}
+
+.card-wrapper:hover {
+    box-shadow: 0 0 30px #fff;
+}
+
+.card {
+    position: absolute;
+    top: -100%;
+    height:100%;
+    width:100%;
+    background: linear-gradient(190deg, rgba(15, 41, 16, 0.502) 50%, rgba(255, 0, 255, 0.577)0); 
+    border-color: #fff;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* color: white; */
+    transition: top 1.5s 1.5s;
+}
+
+.card-wrapper:hover .card {
+    top: 0;
+}
+
+.card-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-top: 15px;
+    border:2px solid #fff;
+    padding:10px;
+    box-shadow: 0px 0px 50px rgba(235, 229, 229, 0.5)
+}
+
+.card-heading {
+    margin-bottom: 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    background: linear-gradient(190deg,rgba(255, 0, 255, 0.577),rgba(15, 41, 16, 0.502)); 
+    width:70%;
+    text-align:center;
+    padding:5px, 0; 
+    transform: perspective(1000px) skewX(-20deg) rotatey(20deg);
+}
+
+.card-paragraph {
+    font-size: 18px;
+    color:#ddd;
+    width:85%;
+    text-align: justify;
+    position: relative;
+}
+
+.card-paragraph ::first-letter{
+    margin-left:15px;
+}
+
+.card-paragraph i {
+    font-size: 15px;
+    color:#fff;
+    font-style: italic;   
+    position:absolute;
+}
+
+.card-paragraph i:first-child{
+    margin-left:-10%;
+}
+
+.card-icons {
+    list-style: none;
+    display:flex;
+    width:50%;
+    justify-content: space-between;
+}
+
+.card-icon-link {
+    margin-top: 15px;
+    text-decoration:none;
+    width:35px;
+    height:35px;
+    border: 1px solid #fff;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: border .3s;
+}
+
+.card-icon-link:hover {
+    border:1px solid #1b5cf5;
+}
+
+.card-icons {
+    font-size:20px;
+    color:#fff;
+    transition: border .3s;
+}
+
+.card-icon-link:hover .card-icon {
+    border: #1b5cf5;
+}
+
+.card-btn {
+    border: none;
+    outline:none;
+    width: 150px;
+    height: 35px; 
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background: rgb(221,170,202);
+background: linear-gradient(90deg, rgba(221,170,202,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color:#1b5cf5;
+    text-transform:uppercase;
+    font-size: 12px;
+    box-shadow: 0 10px 20px rgba(0,0, 0, .7);
+    cursor: pointer;
+
+}
